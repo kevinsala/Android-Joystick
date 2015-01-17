@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:id="@+id/frame"
+    tools:context="com.example.joystick.MainActivity" >
+    <TextView
+        android:id="@+id/degreeText"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#ffffff">
+    </TextView>
+    <ImageView 
+        android:id="@+id/externalJoystickView"
+     	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+        android:background="@drawable/joystick_external"
+        android:contentDescription="@string/visual_element" />
+    
+    <ImageView 
+        android:id="@+id/internalJoystickView"
+     	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+        android:background="@drawable/joystick_internal"
+        android:contentDescription="@string/visual_element" />
+</RelativeLayout>
